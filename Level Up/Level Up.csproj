@@ -95,6 +95,9 @@
     <Compile Include="UserControls\StoreControl.Designer.cs">
       <DependentUpon>StoreControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>

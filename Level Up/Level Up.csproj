@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LevelUpDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LevelUpDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\AccountDetailsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -99,6 +104,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="LevelUpDBDataSet.xsc">
+      <DependentUpon>LevelUpDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LevelUpDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LevelUpDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LevelUpDBDataSet.xss">
+      <DependentUpon>LevelUpDBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

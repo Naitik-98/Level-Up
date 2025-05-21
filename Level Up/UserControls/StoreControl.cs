@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Level_Up
 {
-    public partial class Form1 : Form
+    public partial class StoreControl : UserControl
     {
-        public Form1()
+        public StoreControl()
         {
             InitializeComponent();
         }

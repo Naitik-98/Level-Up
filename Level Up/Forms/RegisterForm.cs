@@ -12,6 +12,11 @@ namespace Level_Up
         public RegisterForm()
         {
             InitializeComponent();
+            // Add gender options to ComboBox
+            cmbGender.Items.Add("I am male");
+            cmbGender.Items.Add("I am female");
+            cmbGender.Items.Add("I am robot");
+            cmbGender.Items.Add("I am human");
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -51,13 +56,13 @@ namespace Level_Up
                     {
                         conn.Open();
 
-                        string query = @"INSERT INTO Users (UserID, Name, Username, Email, Password, Gender, DateOfBirth)
-                                     VALUES (@UserID, @Name, @Username, @Email, @Password, @Gender, @DOB)";
+                        string query = @"INSERT INTO Users (Username, Email, Password, Gender, DateOfBirth)
+                                     VALUES (@UserID, @FullName, @Username, @Email, @Password, @Gender, @DOB)";
 
                         using (SqlCommand cmd = new SqlCommand(query, conn))
                         {
                             cmd.Parameters.AddWithValue("@UserID", userId);
-                            cmd.Parameters.AddWithValue("@Name", name);
+                            cmd.Parameters.AddWithValue("@FullName", name);
                             cmd.Parameters.AddWithValue("@Username", username);
                             cmd.Parameters.AddWithValue("@Email", email);
                             cmd.Parameters.AddWithValue("@Password", password);
@@ -92,6 +97,11 @@ namespace Level_Up
             }
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
         {
 
         }

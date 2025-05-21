@@ -179,8 +179,8 @@ namespace Level_Up
             this.txtName.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtName.Size = new System.Drawing.Size(347, 25);
             this.txtName.TabIndex = 10;
-            this.txtName.Text = "PLEASE ENTER YOU NAME";
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // txtUsername
             // 
@@ -193,7 +193,6 @@ namespace Level_Up
             this.txtUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtUsername.Size = new System.Drawing.Size(347, 25);
             this.txtUsername.TabIndex = 11;
-            this.txtUsername.Text = "PLEASE ENTER YOU USERNAME";
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtPassword
@@ -220,7 +219,6 @@ namespace Level_Up
             this.txtEmail.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtEmail.Size = new System.Drawing.Size(347, 25);
             this.txtEmail.TabIndex = 13;
-            this.txtEmail.Text = "PLEASE ENTER YOU EMAIL";
             this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
@@ -229,11 +227,6 @@ namespace Level_Up
             this.cmbGender.Font = new System.Drawing.Font("ROG Fonts", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbGender.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.cmbGender.FormattingEnabled = true;
-            this.cmbGender.Items.AddRange(new object[] {
-            "I  AM  MALE",
-            "I  AM  FEMALE",
-            "I  AM  ROBOT",
-            "I  AM  HUMAN"});
             this.cmbGender.Location = new System.Drawing.Point(510, 400);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.RightToLeft = System.Windows.Forms.RightToLeft.No;

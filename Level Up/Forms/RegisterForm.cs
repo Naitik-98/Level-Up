@@ -56,12 +56,11 @@ namespace Level_Up
                     {
                         conn.Open();
 
-                        string query = @"INSERT INTO Users (Username, Email, Password, Gender, DateOfBirth)
-                                     VALUES (@UserID, @FullName, @Username, @Email, @Password, @Gender, @DOB)";
+                        string query = @"INSERT INTO Users (FullName, Username, Email, Password, Gender, DateOfBirth)
+                                     VALUES (@FullName, @Username, @Email, @Password, @Gender, @DOB)";
 
                         using (SqlCommand cmd = new SqlCommand(query, conn))
                         {
-                            cmd.Parameters.AddWithValue("@UserID", userId);
                             cmd.Parameters.AddWithValue("@FullName", name);
                             cmd.Parameters.AddWithValue("@Username", username);
                             cmd.Parameters.AddWithValue("@Email", email);

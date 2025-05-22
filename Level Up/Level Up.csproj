@@ -112,6 +112,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="LevelUpDBDataSet.xsc">
       <DependentUpon>LevelUpDBDataSet.xsd</DependentUpon>
@@ -140,6 +141,9 @@
   <ItemGroup>
     <Folder Include="Database\" />
     <Folder Include="Utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RSS\Picsart_25-05-21_17-53-38-533.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -99,7 +99,7 @@
             this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "L O G I N";
             this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnRegister_Click);
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnCreateAccount
             // 

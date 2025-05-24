@@ -15,7 +15,10 @@ namespace Level_Up
     public partial class LoginForm : Form
     {
         // Replace with your actual SQL Server connection string
-        string connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=LevelUpDB;Integrated Security=True;Trust Server Certificate=True";
+        string connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=LevelUpDB;Integrated Security=True;Encrypt=False";
+
+
+
 
         public LoginForm()
         {
@@ -31,7 +34,7 @@ namespace Level_Up
         {
 
         }
-        private void btnRegister_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             string username = lblUsername.Text.Trim();
             string password = lblPassword.Text.Trim();

@@ -16,5 +16,11 @@ namespace Level_Up
         {
             InitializeComponent();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
     }
 }
+//bvkjs

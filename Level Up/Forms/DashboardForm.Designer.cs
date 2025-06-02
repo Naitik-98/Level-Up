@@ -33,21 +33,21 @@
             this.btnStore = new System.Windows.Forms.Button();
             this.btnLibrary = new System.Windows.Forms.Button();
             this.btnAccount = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.labelTop = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLeft
             // 
+            this.panelLeft.Controls.Add(this.pictureBox1);
             this.panelLeft.Controls.Add(this.btnSettings);
             this.panelLeft.Controls.Add(this.btnStore);
             this.panelLeft.Controls.Add(this.btnLibrary);
             this.panelLeft.Controls.Add(this.btnAccount);
-            this.panelLeft.Controls.Add(this.pictureBox1);
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(300, 700);
@@ -103,16 +103,6 @@
             this.btnAccount.Text = "ACCOUNT";
             this.btnAccount.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Level_Up.Properties.Resources.Picsart_25_05_21_17_53_38_533;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 284);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -134,12 +124,25 @@
             this.labelTop.Text = "Level Up";
             this.labelTop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel1
+            // panelMain
             // 
-            this.panel1.Location = new System.Drawing.Point(306, 95);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1066, 574);
-            this.panel1.TabIndex = 3;
+            this.panelMain.BackColor = System.Drawing.SystemColors.MenuText;
+            this.panelMain.Location = new System.Drawing.Point(306, 95);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1066, 574);
+            this.panelMain.TabIndex = 3;
+            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Level_Up.Properties.Resources.Picsart_25_05_21_17_53_38_533;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(300, 284);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // DashboardForm
             // 
@@ -147,7 +150,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1384, 681);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelMain);
             this.Controls.Add(this.labelTop);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelLeft);
@@ -173,6 +176,6 @@
         private System.Windows.Forms.Button btnStore;
         private System.Windows.Forms.Button btnLibrary;
         private System.Windows.Forms.Button btnAccount;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelMain;
     }
 }

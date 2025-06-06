@@ -16,5 +16,20 @@ namespace Level_Up
         {
             InitializeComponent();
         }
+
+        private void labelUsername_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelEmail_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

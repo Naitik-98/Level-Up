@@ -63,6 +63,12 @@
     <Compile Include="Forms\DashboardForm.Designer.cs">
       <DependentUpon>DashboardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\GameItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\GameItemControl.Designer.cs">
+      <DependentUpon>GameItemControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\LibraryControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -114,6 +120,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\AccountDetailsControl.resx">
+      <DependentUpon>AccountDetailsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\GameItemControl.resx">
+      <DependentUpon>GameItemControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\LibraryControl.resx">
       <DependentUpon>LibraryControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +159,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="RSS\Picsart_25-05-21_17-53-38-533.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\73-730482_existing-user-default-avatar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

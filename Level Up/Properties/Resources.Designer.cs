@@ -63,6 +63,16 @@ namespace Level_Up.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1280x720_temp_68487894b594e {
+            get {
+                object obj = ResourceManager.GetObject("1280x720-temp_68487894b594e", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _73_730482_existing_user_default_avatar {
             get {
                 object obj = ResourceManager.GetObject("73-730482_existing-user-default-avatar", resourceCulture);

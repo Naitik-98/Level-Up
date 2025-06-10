@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Library.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Library.Designer.cs">
+      <DependentUpon>Library.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Store.Designer.cs">
+      <DependentUpon>Store.cs</DependentUpon>
+    </Compile>
     <Compile Include="LevelUpDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -101,14 +125,26 @@
     <Compile Include="UserControls\StoreControl.Designer.cs">
       <DependentUpon>StoreControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DashboardForm.resx">
       <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Library.resx">
+      <DependentUpon>Library.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Store.resx">
+      <DependentUpon>Store.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -162,6 +198,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\73-730482_existing-user-default-avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1280x720-temp_68487894b594e.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

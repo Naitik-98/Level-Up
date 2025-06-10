@@ -1,5 +1,4 @@
-﻿using Level_Up.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,33 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Level_Up
+namespace Level_Up.Forms
 {
-    public partial class DashboardForm : Form
+    public partial class Account : Form
     {
-        public DashboardForm()
+        public Account()
         {
             InitializeComponent();
-          
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Account_Load(object sender, EventArgs e)
         {
 
         }
 
         private void panelMain_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-     
-        private void DashboardForm_Load(object sender, EventArgs e)
         {
 
         }
@@ -49,7 +36,6 @@ namespace Level_Up
         {
             var accountForm = new Account();
             accountForm.Show();
-            accountForm.FormClosed += (s, args) => this.Show();
             this.Hide();
         }
 
@@ -57,7 +43,6 @@ namespace Level_Up
         {
             var settingsForm = new Settings();
             settingsForm.Show();
-            settingsForm.FormClosed += (s, args) => this.Show();
             this.Hide();
         }
 
@@ -65,7 +50,6 @@ namespace Level_Up
         {
             var storeForm = new Store();
             storeForm.Show();
-            storeForm.FormClosed += (s, args) => this.Show();
             this.Hide();
         }
 
@@ -73,24 +57,7 @@ namespace Level_Up
         {
             var libraryForm = new Library();
             libraryForm.Show();
-            libraryForm.FormClosed += (s, args) => this.Show();
-            this.Hide();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Welcome_Click(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }
-//fnnf

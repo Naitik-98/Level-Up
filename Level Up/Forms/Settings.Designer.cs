@@ -34,13 +34,15 @@
             this.btnStore = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.Logoutbtn = new System.Windows.Forms.Button();
             this.labelTop = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Logoutbtn = new System.Windows.Forms.Button();
+            this.backbtn = new System.Windows.Forms.PictureBox();
             this.panelLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backbtn)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -118,16 +120,6 @@
             this.panelLeft.TabIndex = 4;
             this.panelLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLeft_Paint);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Level_Up.Properties.Resources.Picsart_25_05_21_17_53_38_533;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 284);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.SystemColors.MenuText;
@@ -137,16 +129,6 @@
             this.panelMain.Size = new System.Drawing.Size(1066, 570);
             this.panelMain.TabIndex = 7;
             this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
-            // 
-            // Logoutbtn
-            // 
-            this.Logoutbtn.Image = global::Level_Up.Properties.Resources._1280x720_temp_68487894b594e;
-            this.Logoutbtn.Location = new System.Drawing.Point(466, 411);
-            this.Logoutbtn.Name = "Logoutbtn";
-            this.Logoutbtn.Size = new System.Drawing.Size(150, 150);
-            this.Logoutbtn.TabIndex = 0;
-            this.Logoutbtn.UseVisualStyleBackColor = true;
-            this.Logoutbtn.Click += new System.EventHandler(this.Logoutbtn_Click);
             // 
             // labelTop
             // 
@@ -161,12 +143,44 @@
             this.labelTop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.labelTop.Click += new System.EventHandler(this.labelTop_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Level_Up.Properties.Resources.Picsart_25_05_21_17_53_38_533;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(300, 284);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Logoutbtn
+            // 
+            this.Logoutbtn.Image = global::Level_Up.Properties.Resources._1280x720_temp_68487894b594e;
+            this.Logoutbtn.Location = new System.Drawing.Point(466, 411);
+            this.Logoutbtn.Name = "Logoutbtn";
+            this.Logoutbtn.Size = new System.Drawing.Size(150, 150);
+            this.Logoutbtn.TabIndex = 0;
+            this.Logoutbtn.UseVisualStyleBackColor = true;
+            this.Logoutbtn.Click += new System.EventHandler(this.Logoutbtn_Click);
+            // 
+            // backbtn
+            // 
+            this.backbtn.Image = global::Level_Up.Properties.Resources.Screenshot_2025_06_11_221343;
+            this.backbtn.Location = new System.Drawing.Point(307, 20);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(70, 70);
+            this.backbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.backbtn.TabIndex = 1;
+            this.backbtn.TabStop = false;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1384, 681);
+            this.Controls.Add(this.backbtn);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.labelTop);
@@ -174,8 +188,9 @@
             this.Name = "Settings";
             this.Text = "Settings";
             this.panelLeft.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backbtn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,5 +208,6 @@
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Label labelTop;
         private System.Windows.Forms.Button Logoutbtn;
+        private System.Windows.Forms.PictureBox backbtn;
     }
 }

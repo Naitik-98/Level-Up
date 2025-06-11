@@ -37,8 +37,10 @@
             this.panelMain = new System.Windows.Forms.Panel();
             this.labelTop = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.backbtn = new System.Windows.Forms.PictureBox();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backbtn)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLeft
@@ -146,12 +148,24 @@
             this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click_2);
             // 
+            // backbtn
+            // 
+            this.backbtn.Image = global::Level_Up.Properties.Resources.Screenshot_2025_06_11_221343;
+            this.backbtn.Location = new System.Drawing.Point(308, 17);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(70, 70);
+            this.backbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.backbtn.TabIndex = 1;
+            this.backbtn.TabStop = false;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
+            // 
             // Library
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1384, 681);
+            this.Controls.Add(this.backbtn);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.labelTop);
@@ -160,6 +174,7 @@
             this.Text = "Library";
             this.panelLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backbtn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,5 +191,6 @@
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Label labelTop;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox backbtn;
     }
 }

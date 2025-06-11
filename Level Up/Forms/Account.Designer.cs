@@ -37,8 +37,10 @@
             this.labelTop = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.backbtn = new System.Windows.Forms.PictureBox();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backbtn)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLeft
@@ -88,7 +90,6 @@
             this.btnLibrary.TabIndex = 3;
             this.btnLibrary.Text = "LIBRARY";
             this.btnLibrary.UseVisualStyleBackColor = false;
-          
             // 
             // btnAccount
             // 
@@ -145,12 +146,24 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // backbtn
+            // 
+            this.backbtn.Image = global::Level_Up.Properties.Resources.Screenshot_2025_06_11_221343;
+            this.backbtn.Location = new System.Drawing.Point(300, 16);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(70, 70);
+            this.backbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.backbtn.TabIndex = 0;
+            this.backbtn.TabStop = false;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
+            // 
             // Account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1384, 681);
+            this.Controls.Add(this.backbtn);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.labelTop);
@@ -160,6 +173,7 @@
             this.Load += new System.EventHandler(this.Account_Load);
             this.panelLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backbtn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,5 +190,6 @@
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Label labelTop;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox backbtn;
     }
 }

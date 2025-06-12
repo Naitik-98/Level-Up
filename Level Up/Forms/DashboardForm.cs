@@ -13,10 +13,19 @@ namespace Level_Up
 {
     public partial class DashboardForm : Form
     {
+        public DbAccess DbAccess { get; set; }
+        public string Username { get; set; }
+        public LoginForm LoginForm { get; set; }
         public DashboardForm()
         {
             InitializeComponent();
-          
+            this.DbAccess = new DbAccess();
+        }
+
+        public DashboardForm(LoginForm loginForm, string username) : this()
+        {
+            this.LoginForm = loginForm;
+            this.Username = username;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -47,7 +56,7 @@ namespace Level_Up
 
         private void btnAccount_Click(object sender, EventArgs e)
         {
-            var accountForm = new Account();
+            var accountForm = new Account(LoginForm, this, DbAccess, Username);
             accountForm.Show();
             accountForm.FormClosed += (s, args) => this.Show();
             this.Hide();

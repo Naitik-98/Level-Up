@@ -15,7 +15,9 @@ namespace Level_Up
     public partial class LoginForm : Form
     {
         // Replace with your actual SQL Server connection string
-        string connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=LevelUpDB;Integrated Security=True;Encrypt=False";
+       // string connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=LevelUpDB;Integrated Security=True;Encrypt=False";
+
+        string connectionString = "Data Source=localhost\\SQLEXPRESS03;Initial Catalog=LevelUpDB;Integrated Security=True;Encrypt=False";
 
 
 
@@ -62,7 +64,7 @@ namespace Level_Up
                     {
                         MessageBox.Show("Login successful!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Hide();
-                        DashboardForm dashboard = new DashboardForm();
+                        DashboardForm dashboard = new DashboardForm(this, this.lblUsername.Text);
                         dashboard.FormClosed += (s, args) => this.Close(); // Close login when dashboard closes
                         dashboard.Show();
                     }

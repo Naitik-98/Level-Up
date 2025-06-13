@@ -81,5 +81,10 @@ namespace Level_Up.Forms
         {
 
         }
+
+        private void lblDOB_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

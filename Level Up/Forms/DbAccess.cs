@@ -31,7 +31,7 @@ namespace Level_Up.Forms
 
                 {
 
-                    this.Sqlcon = new SqlConnection(@"Data Source=localhost\SQLEXPRESS03;Initial Catalog=LevelUpDB;Integrated Security=True;Encrypt=False");
+                    this.Sqlcon = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog=LevelUpDB;Integrated Security=True;Encrypt=False");
 
                     Sqlcon.Open();
 

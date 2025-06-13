@@ -137,9 +137,9 @@
             // lblDOB
             // 
             this.lblDOB.AutoSize = true;
-            this.lblDOB.BackColor = System.Drawing.Color.Indigo;
+            this.lblDOB.BackColor = System.Drawing.Color.Transparent;
             this.lblDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDOB.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblDOB.ForeColor = System.Drawing.Color.CadetBlue;
             this.lblDOB.Location = new System.Drawing.Point(72, 409);
             this.lblDOB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDOB.Name = "lblDOB";
@@ -151,9 +151,9 @@
             // lblOwnedGame
             // 
             this.lblOwnedGame.AutoSize = true;
-            this.lblOwnedGame.BackColor = System.Drawing.Color.Indigo;
+            this.lblOwnedGame.BackColor = System.Drawing.Color.Transparent;
             this.lblOwnedGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOwnedGame.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblOwnedGame.ForeColor = System.Drawing.Color.CadetBlue;
             this.lblOwnedGame.Location = new System.Drawing.Point(72, 306);
             this.lblOwnedGame.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOwnedGame.Name = "lblOwnedGame";
@@ -164,9 +164,9 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.BackColor = System.Drawing.Color.Indigo;
+            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblUsername.ForeColor = System.Drawing.Color.CadetBlue;
             this.lblUsername.Location = new System.Drawing.Point(72, 198);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsername.Name = "lblUsername";
@@ -177,15 +177,16 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.BackColor = System.Drawing.Color.Indigo;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblName.ForeColor = System.Drawing.Color.CadetBlue;
             this.lblName.Location = new System.Drawing.Point(72, 90);
             this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(137, 37);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Name:  ";
+            this.lblName.Click += new System.EventHandler(this.lblName_Click);
             // 
             // labelTop
             // 

@@ -86,5 +86,10 @@ namespace Level_Up.Forms
         {
 
         }
+
+        private void lblName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -16,6 +16,7 @@ namespace Level_Up
     {
         // Replace with your actual SQL Server connection string
         string connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=LevelUpDB;Integrated Security=True;Encrypt=False";
+        //
 
 
 

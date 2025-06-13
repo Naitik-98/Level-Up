@@ -15,9 +15,9 @@ namespace Level_Up
     public partial class LoginForm : Form
     {
         // Replace with your actual SQL Server connection string
-        string connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=LevelUpDB;Integrated Security=True;Encrypt=False";
+       // string connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=LevelUpDB;Integrated Security=True;Encrypt=False";
 
-     
+        string connectionString = "Data Source=localhost\\SQLEXPRESS03;Initial Catalog=LevelUpDB;Integrated Security=True;Encrypt=False";
 
 
 

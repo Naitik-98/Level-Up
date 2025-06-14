@@ -54,7 +54,7 @@
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(300, 700);
             this.panelLeft.TabIndex = 8;
-            this.panelLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLeft_Paint_2);
+          
             // 
             // pictureBox1
             // 
@@ -101,7 +101,7 @@
             this.btnLibrary.TabIndex = 3;
             this.btnLibrary.Text = "LIBRARY";
             this.btnLibrary.UseVisualStyleBackColor = false;
-            this.btnLibrary.Click += new System.EventHandler(this.btnLibrary_Click);
+      
             // 
             // btnAccount
             // 
@@ -123,7 +123,7 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1066, 570);
             this.panelMain.TabIndex = 11;
-            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint_2);
+
             // 
             // labelTop
             // 
@@ -136,7 +136,7 @@
             this.labelTop.TabIndex = 10;
             this.labelTop.Text = "Library";
             this.labelTop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelTop.Click += new System.EventHandler(this.labelTop_Click_2);
+
             // 
             // label1
             // 
@@ -146,7 +146,7 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click_2);
+
             // 
             // backbtn
             // 

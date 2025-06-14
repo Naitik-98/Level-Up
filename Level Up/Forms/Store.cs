@@ -84,7 +84,7 @@ namespace Level_Up.Forms
 
                     // Price label
                     Label lblPrice = new Label();
-                    lblPrice.Text = "Price: $" + price;
+                    lblPrice.Text = "Price: BDT" + price;
                     lblPrice.ForeColor = Color.White;
                     lblPrice.Font = new Font("Arial", 10, FontStyle.Regular);
                     lblPrice.Location = new Point(150, 90);

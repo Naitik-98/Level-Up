@@ -80,7 +80,7 @@ namespace Level_Up
 
         private void btnLibrary_Click(object sender, EventArgs e)
         {
-            var libraryForm = new Library();
+            var libraryForm = new Library(Username); // Pass the Username property
             libraryForm.Show();
             libraryForm.FormClosed += (s, args) => this.Show();
             this.Hide();

@@ -38,6 +38,28 @@ namespace Level_Up.Forms
             this.lblName.Text += fullName;
             this.lblDOB.Text += dateOfBirth;
             this.lblUsername.Text += this.Username;
+
+            UpdateOwnedGamesCount();
+        }
+
+        private void UpdateOwnedGamesCount()
+        {
+            try
+            {
+                string sql = $"SELECT COUNT(*) FROM UserLibrary WHERE Username = '{this.Username}'";
+                var dt = this.DbAccess.ExecuteQueryTable(sql);
+                int count = 0;
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    count = Convert.ToInt32(dt.Rows[0][0]);
+                }
+                lblOwnedGame.Text = $"Owned Games: {count}";
+            }
+            catch (Exception ex)
+            {
+                lblOwnedGame.Text = "Owned Games: ?";
+                MessageBox.Show("Error loading owned games count: " + ex.Message);
+            }
         }
 
         private void panelMain_Paint(object sender, PaintEventArgs e)
@@ -91,5 +113,8 @@ namespace Level_Up.Forms
         {
 
         }
+
+     
+        }
     }
-}
+

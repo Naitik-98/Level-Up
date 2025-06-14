@@ -160,6 +160,7 @@
             this.lblOwnedGame.Size = new System.Drawing.Size(331, 37);
             this.lblOwnedGame.TabIndex = 3;
             this.lblOwnedGame.Text = "Total Owned Game: ";
+          
             // 
             // lblUsername
             // 

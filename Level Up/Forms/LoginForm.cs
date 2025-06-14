@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Level_Up.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -50,21 +51,34 @@ namespace Level_Up
                 try
                 {
                     conn.Open();
-                    string query = "SELECT COUNT(*) FROM Users WHERE Username = @Username AND Password = @Password";
+                    string query = "SELECT UserType FROM Users WHERE Username = @Username AND Password = @Password";
 
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@Username", username);
-                    cmd.Parameters.AddWithValue("@Password", password); // ⚠️ You should hash passwords in production
+                    cmd.Parameters.AddWithValue("@Password", password); // ⚠️ Should use hashed passwords in production
 
-                    int result = (int)cmd.ExecuteScalar();
+                    object result = cmd.ExecuteScalar();
 
-                    if (result > 0)
+                    if (result != null)
                     {
-                        MessageBox.Show("Login successful!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        this.Hide();
-                        DashboardForm dashboard = new DashboardForm(this, this.lblUsername.Text);
-                        dashboard.FormClosed += (s, args) => this.Close(); // Close login when dashboard closes
-                        dashboard.Show();
+                        string userType = result.ToString();
+
+                        if (userType == "admin")
+                        {
+                            MessageBox.Show("Welcome Admin!", "Admin Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Hide();
+                            AdminPanelForm adminPanel = new AdminPanelForm();
+                            adminPanel.FormClosed += (s, args) => this.Close();
+                            adminPanel.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Login successful!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Hide();
+                            DashboardForm dashboard = new DashboardForm(this, this.lblUsername.Text);
+                            dashboard.FormClosed += (s, args) => this.Close();
+                            dashboard.Show();
+                        }
                     }
                     else
                     {
@@ -77,6 +91,7 @@ namespace Level_Up
                 }
             }
         }
+
 
         private void btnCreateAccount_Click(object sender, EventArgs e)
         {

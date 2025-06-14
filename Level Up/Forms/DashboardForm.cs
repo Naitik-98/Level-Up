@@ -72,9 +72,9 @@ namespace Level_Up
 
         private void btnStore_Click(object sender, EventArgs e)
         {
-            var storeForm = new Store();
-            storeForm.Show();
+            var storeForm = new Store(Username); // Pass the username property from DashboardForm
             storeForm.FormClosed += (s, args) => this.Show();
+            storeForm.Show();
             this.Hide();
         }
 

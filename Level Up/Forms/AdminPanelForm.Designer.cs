@@ -75,7 +75,6 @@
             this.lblDescription.Size = new System.Drawing.Size(152, 28);
             this.lblDescription.TabIndex = 2;
             this.lblDescription.Text = "Description : ";
-            this.lblDescription.Click += new System.EventHandler(this.lblDescription_Click);
             // 
             // lblPrice
             // 
@@ -119,6 +118,7 @@
             this.txtGameDescription.Name = "txtGameDescription";
             this.txtGameDescription.Size = new System.Drawing.Size(500, 140);
             this.txtGameDescription.TabIndex = 6;
+            
             // 
             // txtGamePrice
             // 

@@ -102,5 +102,6 @@ namespace Level_Up.Forms
             pictureBoxGame.Image = null;
             pictureBoxGame.Tag = null;
         }
+
     }
 }

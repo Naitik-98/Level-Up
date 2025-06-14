@@ -82,29 +82,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LevelUpDBDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\AccountDetailsControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\AccountDetailsControl.Designer.cs">
-      <DependentUpon>AccountDetailsControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\DashboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\DashboardForm.Designer.cs">
       <DependentUpon>DashboardForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\GameItemControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\GameItemControl.Designer.cs">
-      <DependentUpon>GameItemControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\LibraryControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\LibraryControl.Designer.cs">
-      <DependentUpon>LibraryControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
@@ -119,18 +101,6 @@
     </Compile>
     <Compile Include="Forms\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\SettingsControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\SettingsControl.Designer.cs">
-      <DependentUpon>SettingsControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\StoreControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\StoreControl.Designer.cs">
-      <DependentUpon>StoreControl.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Forms\Account.resx">
       <DependentUpon>Account.cs</DependentUpon>
@@ -166,15 +136,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControls\AccountDetailsControl.resx">
-      <DependentUpon>AccountDetailsControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\GameItemControl.resx">
-      <DependentUpon>GameItemControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\LibraryControl.resx">
-      <DependentUpon>LibraryControl.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="LevelUpDBDataSet.xsc">
       <DependentUpon>LevelUpDBDataSet.xsd</DependentUpon>
     </None>

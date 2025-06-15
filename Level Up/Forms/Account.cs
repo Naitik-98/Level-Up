@@ -31,15 +31,18 @@ namespace Level_Up.Forms
 
         private void Account_Load(object sender, EventArgs e)
         {
-            var sql = "SELECT * FROM Users WHERE Username = '" + this.Username + "';";
-            var userData = this.DbAccess.ExecuteQueryTable(sql);
-            var fullName = userData.Rows[0]["FullName"].ToString();
-            var email = userData.Rows[0]["Email"].ToString(); // Changed from DateOfBirth to Email
-            this.lblName.Text += fullName;
-            this.lblEmail.Text = "Email: " + email; // Update label to show email
-            this.lblUsername.Text += this.Username;
+            using (var db = new DbAccess())
+            {
+                var sql = "SELECT * FROM Users WHERE Username = '" + this.Username + "';";
+                var userData = db.ExecuteQueryTable(sql);
+                var fullName = userData.Rows[0]["FullName"].ToString();
+                var email = userData.Rows[0]["Email"].ToString(); // Changed from DateOfBirth to Email
+                this.lblName.Text += fullName;
+                this.lblEmail.Text = "Email: " + email; // Update label to show email
+                this.lblUsername.Text += this.Username;
 
-            UpdateOwnedGamesCount();
+                UpdateOwnedGamesCount();
+            }
         }
 
         private void UpdateOwnedGamesCount()

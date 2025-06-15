@@ -64,7 +64,7 @@ namespace Level_Up
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            var settingsForm = new Settings();
+            var settingsForm = new Settings(Username); // Pass the Username property
             settingsForm.Show();
             settingsForm.FormClosed += (s, args) => this.Show();
             this.Hide();

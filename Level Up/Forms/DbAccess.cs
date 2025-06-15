@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Level_Up.Forms
 {
-    public class DbAccess
+    public class DbAccess : IDisposable
     {
 
 
@@ -175,6 +175,11 @@ namespace Level_Up.Forms
 
             
 
+        }
+
+        public void Dispose()
+        {
+            CloseConnection();
         }
     }
 }

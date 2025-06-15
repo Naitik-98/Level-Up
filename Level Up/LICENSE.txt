@@ -1,0 +1,17 @@
+Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+
+You may:
+- View, use, and share the unmodified project files for personal or educational purposes only.
+- Give appropriate credit to the original creator.
+
+You may not:
+- Use this project for commercial purposes.
+- Modify, adapt, or build upon this work.
+- Distribute modified versions of this project.
+
+For full license details, visit:
+https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+© 2025 Naitik-98. All Rights Reserved.

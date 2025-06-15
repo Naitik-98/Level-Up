@@ -33,10 +33,10 @@ namespace Level_Up.Forms
         {
             var sql = "SELECT * FROM Users WHERE Username = '" + this.Username + "';";
             var userData = this.DbAccess.ExecuteQueryTable(sql);
-            var fullName= userData.Rows[0]["FullName"].ToString();
-            var dateOfBirth = userData.Rows[0]["DateOfBirth"].ToString();
+            var fullName = userData.Rows[0]["FullName"].ToString();
+            var email = userData.Rows[0]["Email"].ToString(); // Changed from DateOfBirth to Email
             this.lblName.Text += fullName;
-            this.lblDOB.Text += dateOfBirth;
+            this.lblEmail.Text = "Email: " + email; // Update label to show email
             this.lblUsername.Text += this.Username;
 
             UpdateOwnedGamesCount();
@@ -62,35 +62,6 @@ namespace Level_Up.Forms
             }
         }
 
-        private void panelMain_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void labelTop_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAccount_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnSettings_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnStore_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void btnLibrary_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private void backbtn_Click(object sender, EventArgs e)
         {
@@ -99,22 +70,9 @@ namespace Level_Up.Forms
             this.Close();
         }
 
-        private void panelLeft_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblDOB_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblName_Click(object sender, EventArgs e)
-        {
-
         }
 
      
         }
-    }
+   
 

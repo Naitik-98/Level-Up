@@ -35,7 +35,7 @@
             this.btnLibrary = new System.Windows.Forms.Button();
             this.btnAccount = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.lblDOB = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.lblOwnedGame = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
@@ -59,7 +59,6 @@
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(300, 700);
             this.panelLeft.TabIndex = 4;
-            this.panelLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLeft_Paint);
             // 
             // pictureBox1
             // 
@@ -119,12 +118,11 @@
             this.btnAccount.TabIndex = 2;
             this.btnAccount.Text = "ACCOUNT";
             this.btnAccount.UseVisualStyleBackColor = false;
-            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
             // 
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.SystemColors.MenuText;
-            this.panelMain.Controls.Add(this.lblDOB);
+            this.panelMain.Controls.Add(this.lblEmail);
             this.panelMain.Controls.Add(this.lblOwnedGame);
             this.panelMain.Controls.Add(this.lblUsername);
             this.panelMain.Controls.Add(this.lblName);
@@ -132,27 +130,25 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(970, 585);
             this.panelMain.TabIndex = 7;
-            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
             // 
-            // lblDOB
+            // lblEmail
             // 
-            this.lblDOB.AutoSize = true;
-            this.lblDOB.BackColor = System.Drawing.Color.Transparent;
-            this.lblDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDOB.ForeColor = System.Drawing.Color.CadetBlue;
-            this.lblDOB.Location = new System.Drawing.Point(72, 409);
-            this.lblDOB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblDOB.Name = "lblDOB";
-            this.lblDOB.Size = new System.Drawing.Size(235, 37);
-            this.lblDOB.TabIndex = 4;
-            this.lblDOB.Text = "Date Of Birth: ";
-            this.lblDOB.Click += new System.EventHandler(this.lblDOB_Click);
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.CadetBlue;
+            this.lblEmail.Location = new System.Drawing.Point(72, 409);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(132, 37);
+            this.lblEmail.TabIndex = 4;
+            this.lblEmail.Text = "Email:  ";
             // 
             // lblOwnedGame
             // 
             this.lblOwnedGame.AutoSize = true;
             this.lblOwnedGame.BackColor = System.Drawing.Color.Transparent;
-            this.lblOwnedGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOwnedGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOwnedGame.ForeColor = System.Drawing.Color.CadetBlue;
             this.lblOwnedGame.Location = new System.Drawing.Point(72, 306);
             this.lblOwnedGame.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -160,13 +156,12 @@
             this.lblOwnedGame.Size = new System.Drawing.Size(331, 37);
             this.lblOwnedGame.TabIndex = 3;
             this.lblOwnedGame.Text = "Total Owned Game: ";
-          
             // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.CadetBlue;
             this.lblUsername.Location = new System.Drawing.Point(72, 198);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -179,7 +174,7 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.BackColor = System.Drawing.Color.Transparent;
-            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.CadetBlue;
             this.lblName.Location = new System.Drawing.Point(72, 90);
             this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -187,7 +182,6 @@
             this.lblName.Size = new System.Drawing.Size(137, 37);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Name:  ";
-            this.lblName.Click += new System.EventHandler(this.lblName_Click);
             // 
             // labelTop
             // 
@@ -200,7 +194,6 @@
             this.labelTop.TabIndex = 6;
             this.labelTop.Text = "Account";
             this.labelTop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelTop.Click += new System.EventHandler(this.labelTop_Click);
             // 
             // label1
             // 
@@ -260,7 +253,7 @@
         private System.Windows.Forms.PictureBox backbtn;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Label lblDOB;
+        private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblOwnedGame;
     }
 }

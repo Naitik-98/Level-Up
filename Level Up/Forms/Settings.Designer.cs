@@ -76,6 +76,7 @@
             this.btnAccount.TabIndex = 2;
             this.btnAccount.Text = "ACCOUNT";
             this.btnAccount.UseVisualStyleBackColor = false;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
             // 
             // btnLibrary
             // 
@@ -88,6 +89,7 @@
             this.btnLibrary.TabIndex = 3;
             this.btnLibrary.Text = "LIBRARY";
             this.btnLibrary.UseVisualStyleBackColor = false;
+            this.btnLibrary.Click += new System.EventHandler(this.btnLibrary_Click);
             // 
             // btnStore
             // 
@@ -100,6 +102,7 @@
             this.btnStore.TabIndex = 4;
             this.btnStore.Text = "STORE";
             this.btnStore.UseVisualStyleBackColor = false;
+            this.btnStore.Click += new System.EventHandler(this.btnStore_Click);
             // 
             // btnSettings
             // 
@@ -112,6 +115,7 @@
             this.btnSettings.TabIndex = 5;
             this.btnSettings.Text = "SETTINGS";
             this.btnSettings.UseVisualStyleBackColor = false;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // panelLeft
             // 

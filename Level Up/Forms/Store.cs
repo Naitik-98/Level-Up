@@ -160,13 +160,6 @@ namespace Level_Up.Forms
             }
         }
 
-        private void btnStore_Click(object sender, EventArgs e)
-        {
-            var storeForm = new Store(username); // Pass the username!
-            storeForm.FormClosed += (s, args) => this.Show();
-            storeForm.Show();
-            this.Hide();
-        }
 
         private void backbtn_Click(object sender, EventArgs e)
         {
@@ -177,17 +170,35 @@ namespace Level_Up.Forms
 
         private void btnAccount_Click(object sender, EventArgs e)
         {
+            var accountForm = new Account(null, null, null, username);
+            accountForm.FormClosed += (s, args) => this.Show();
+            accountForm.Show();
+            this.Hide();
+        }
 
+        private void btnStore_Click(object sender, EventArgs e)
+        {
+            var storeForm = new Store(username);
+            storeForm.FormClosed += (s, args) => this.Show();
+            storeForm.Show();
+            this.Hide();
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-
+            var settingsForm = new Settings(username);
+            settingsForm.FormClosed += (s, args) => this.Show();
+            settingsForm.Show();
+            this.Hide();
         }
 
         private void btnLibrary_Click(object sender, EventArgs e)
         {
-
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
         }
+
     }
 }

@@ -54,7 +54,6 @@
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(300, 700);
             this.panelLeft.TabIndex = 8;
-          
             // 
             // pictureBox1
             // 
@@ -77,6 +76,7 @@
             this.btnSettings.TabIndex = 5;
             this.btnSettings.Text = "SETTINGS";
             this.btnSettings.UseVisualStyleBackColor = false;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnStore
             // 
@@ -89,6 +89,7 @@
             this.btnStore.TabIndex = 4;
             this.btnStore.Text = "STORE";
             this.btnStore.UseVisualStyleBackColor = false;
+            this.btnStore.Click += new System.EventHandler(this.btnStore_Click);
             // 
             // btnLibrary
             // 
@@ -101,7 +102,7 @@
             this.btnLibrary.TabIndex = 3;
             this.btnLibrary.Text = "LIBRARY";
             this.btnLibrary.UseVisualStyleBackColor = false;
-      
+            this.btnLibrary.Click += new System.EventHandler(this.btnLibrary_Click);
             // 
             // btnAccount
             // 
@@ -115,6 +116,7 @@
             this.btnAccount.TabIndex = 2;
             this.btnAccount.Text = "ACCOUNT";
             this.btnAccount.UseVisualStyleBackColor = false;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
             // 
             // panelMain
             // 
@@ -123,7 +125,6 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1066, 570);
             this.panelMain.TabIndex = 11;
-
             // 
             // labelTop
             // 
@@ -136,7 +137,6 @@
             this.labelTop.TabIndex = 10;
             this.labelTop.Text = "Library";
             this.labelTop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
             // 
             // label1
             // 
@@ -146,7 +146,6 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "label1";
-
             // 
             // backbtn
             // 

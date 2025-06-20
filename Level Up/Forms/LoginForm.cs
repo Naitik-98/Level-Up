@@ -53,7 +53,7 @@ namespace Level_Up
 
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@Username", username);
-                    cmd.Parameters.AddWithValue("@Password", password); 
+                    cmd.Parameters.AddWithValue("@Password", password);
 
                     object result = cmd.ExecuteScalar();
 

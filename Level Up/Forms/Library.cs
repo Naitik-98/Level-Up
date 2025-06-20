@@ -157,7 +157,6 @@ namespace Level_Up.Forms
             {
                 connection.Open();
 
-                // Check if user already bought the game
                 SqlCommand checkCmd = new SqlCommand("SELECT COUNT(*) FROM UserLibrary WHERE Username = @Username AND GameName = @GameName", connection);
                 checkCmd.Parameters.AddWithValue("@Username", username);
                 checkCmd.Parameters.AddWithValue("@GameName", gameName);

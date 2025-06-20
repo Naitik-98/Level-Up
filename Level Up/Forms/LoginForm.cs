@@ -17,8 +17,6 @@ namespace Level_Up
     {
         // Replace with your actual SQL Server connection string
         string connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=LevelUpDB;Integrated Security=True;Encrypt=False";
-        //
-
 
 
         public LoginForm()
@@ -55,7 +53,7 @@ namespace Level_Up
 
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@Username", username);
-                    cmd.Parameters.AddWithValue("@Password", password); // ⚠️ Should use hashed passwords in production
+                    cmd.Parameters.AddWithValue("@Password", password); 
 
                     object result = cmd.ExecuteScalar();
 

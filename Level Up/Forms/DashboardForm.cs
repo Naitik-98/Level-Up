@@ -30,11 +30,7 @@ namespace Level_Up
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> parent of 1809319 (solve)
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -46,15 +42,6 @@ namespace Level_Up
         {
 
         }
-
-<<<<<<< HEAD
-
-=======
-     
-<<<<<<< HEAD
->>>>>>> parent of 1809319 (solve)
-=======
->>>>>>> parent of 1809319 (solve)
         private void DashboardForm_Load(object sender, EventArgs e)
         {
 
@@ -113,4 +100,3 @@ namespace Level_Up
         }
     }
 }
-//fnnf

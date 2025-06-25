@@ -234,6 +234,9 @@ namespace Level_Up.Forms
             this.Hide();
         }
 
-    
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

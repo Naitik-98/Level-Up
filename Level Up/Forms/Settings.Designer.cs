@@ -58,9 +58,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1, 9);
+            this.label1.Location = new System.Drawing.Point(2, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 5;
             this.label1.Text = "label1";
             // 
@@ -70,9 +71,10 @@
             this.btnAccount.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAccount.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccount.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAccount.Location = new System.Drawing.Point(53, 311);
+            this.btnAccount.Location = new System.Drawing.Point(33, 306);
+            this.btnAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAccount.Name = "btnAccount";
-            this.btnAccount.Size = new System.Drawing.Size(194, 56);
+            this.btnAccount.Size = new System.Drawing.Size(194, 54);
             this.btnAccount.TabIndex = 2;
             this.btnAccount.Text = "ACCOUNT";
             this.btnAccount.UseVisualStyleBackColor = false;
@@ -83,9 +85,10 @@
             this.btnLibrary.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnLibrary.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLibrary.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLibrary.Location = new System.Drawing.Point(53, 403);
+            this.btnLibrary.Location = new System.Drawing.Point(33, 384);
+            this.btnLibrary.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLibrary.Name = "btnLibrary";
-            this.btnLibrary.Size = new System.Drawing.Size(194, 56);
+            this.btnLibrary.Size = new System.Drawing.Size(194, 54);
             this.btnLibrary.TabIndex = 3;
             this.btnLibrary.Text = "LIBRARY";
             this.btnLibrary.UseVisualStyleBackColor = false;
@@ -96,9 +99,10 @@
             this.btnStore.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnStore.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStore.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnStore.Location = new System.Drawing.Point(53, 493);
+            this.btnStore.Location = new System.Drawing.Point(33, 462);
+            this.btnStore.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnStore.Name = "btnStore";
-            this.btnStore.Size = new System.Drawing.Size(194, 56);
+            this.btnStore.Size = new System.Drawing.Size(194, 54);
             this.btnStore.TabIndex = 4;
             this.btnStore.Text = "STORE";
             this.btnStore.UseVisualStyleBackColor = false;
@@ -109,9 +113,10 @@
             this.btnSettings.BackColor = System.Drawing.Color.Indigo;
             this.btnSettings.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettings.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSettings.Location = new System.Drawing.Point(53, 580);
+            this.btnSettings.Location = new System.Drawing.Point(33, 541);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(194, 56);
+            this.btnSettings.Size = new System.Drawing.Size(194, 80);
             this.btnSettings.TabIndex = 5;
             this.btnSettings.Text = "SETTINGS";
             this.btnSettings.UseVisualStyleBackColor = false;
@@ -124,29 +129,33 @@
             this.panelLeft.Controls.Add(this.btnStore);
             this.panelLeft.Controls.Add(this.btnLibrary);
             this.panelLeft.Controls.Add(this.btnAccount);
-            this.panelLeft.Location = new System.Drawing.Point(1, 9);
+            this.panelLeft.Location = new System.Drawing.Point(3, 2);
+            this.panelLeft.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(300, 700);
+            this.panelLeft.Size = new System.Drawing.Size(265, 723);
             this.panelLeft.TabIndex = 4;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Level_Up.Properties.Resources.Picsart_25_05_21_17_53_38_533;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 27);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 284);
+            this.pictureBox1.Size = new System.Drawing.Size(250, 237);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // labelTop
             // 
             this.labelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(32)))));
             this.labelTop.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTop.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelTop.Location = new System.Drawing.Point(307, 9);
+            this.labelTop.Location = new System.Drawing.Point(276, 13);
+            this.labelTop.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTop.Name = "labelTop";
-            this.labelTop.Size = new System.Drawing.Size(1090, 81);
+            this.labelTop.Size = new System.Drawing.Size(986, 100);
             this.labelTop.TabIndex = 6;
             this.labelTop.Text = "Settings";
             this.labelTop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -154,9 +163,10 @@
             // backbtn
             // 
             this.backbtn.Image = global::Level_Up.Properties.Resources.Screenshot_2025_06_11_221343;
-            this.backbtn.Location = new System.Drawing.Point(307, 20);
+            this.backbtn.Location = new System.Drawing.Point(280, 19);
+            this.backbtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.backbtn.Name = "backbtn";
-            this.backbtn.Size = new System.Drawing.Size(70, 70);
+            this.backbtn.Size = new System.Drawing.Size(105, 86);
             this.backbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.backbtn.TabIndex = 1;
             this.backbtn.TabStop = false;
@@ -165,9 +175,10 @@
             // Logoutbtn
             // 
             this.Logoutbtn.Image = global::Level_Up.Properties.Resources._1280x720_temp_68487894b594e;
-            this.Logoutbtn.Location = new System.Drawing.Point(466, 411);
+            this.Logoutbtn.Location = new System.Drawing.Point(809, 386);
+            this.Logoutbtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Logoutbtn.Name = "Logoutbtn";
-            this.Logoutbtn.Size = new System.Drawing.Size(150, 150);
+            this.Logoutbtn.Size = new System.Drawing.Size(161, 143);
             this.Logoutbtn.TabIndex = 0;
             this.Logoutbtn.UseVisualStyleBackColor = true;
             this.Logoutbtn.Click += new System.EventHandler(this.Logoutbtn_Click);
@@ -177,7 +188,8 @@
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.lblName.Location = new System.Drawing.Point(120, 104);
+            this.lblName.Location = new System.Drawing.Point(21, 120);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(147, 28);
             this.lblName.TabIndex = 1;
@@ -188,7 +200,8 @@
             this.lblChange.AutoSize = true;
             this.lblChange.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChange.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.lblChange.Location = new System.Drawing.Point(308, 9);
+            this.lblChange.Location = new System.Drawing.Point(259, 24);
+            this.lblChange.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblChange.Name = "lblChange";
             this.lblChange.Size = new System.Drawing.Size(403, 42);
             this.lblChange.TabIndex = 2;
@@ -208,18 +221,20 @@
             this.panelMain.Controls.Add(this.lblChange);
             this.panelMain.Controls.Add(this.lblName);
             this.panelMain.Controls.Add(this.Logoutbtn);
-            this.panelMain.Location = new System.Drawing.Point(307, 93);
+            this.panelMain.Location = new System.Drawing.Point(268, 127);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1066, 585);
+            this.panelMain.Size = new System.Drawing.Size(983, 550);
             this.panelMain.TabIndex = 7;
             // 
             // txtCurrentPassword
             // 
             this.txtCurrentPassword.BackColor = System.Drawing.Color.Silver;
             this.txtCurrentPassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCurrentPassword.Location = new System.Drawing.Point(273, 261);
+            this.txtCurrentPassword.Location = new System.Drawing.Point(253, 346);
+            this.txtCurrentPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCurrentPassword.Name = "txtCurrentPassword";
-            this.txtCurrentPassword.Size = new System.Drawing.Size(500, 34);
+            this.txtCurrentPassword.Size = new System.Drawing.Size(448, 34);
             this.txtCurrentPassword.TabIndex = 10;
             this.txtCurrentPassword.UseSystemPasswordChar = true;
             // 
@@ -227,9 +242,10 @@
             // 
             this.txtNewPassword.BackColor = System.Drawing.Color.Silver;
             this.txtNewPassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewPassword.Location = new System.Drawing.Point(273, 203);
+            this.txtNewPassword.Location = new System.Drawing.Point(253, 268);
+            this.txtNewPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNewPassword.Name = "txtNewPassword";
-            this.txtNewPassword.Size = new System.Drawing.Size(500, 34);
+            this.txtNewPassword.Size = new System.Drawing.Size(448, 34);
             this.txtNewPassword.TabIndex = 9;
             this.txtNewPassword.UseSystemPasswordChar = true;
             // 
@@ -237,18 +253,20 @@
             // 
             this.txtEmail.BackColor = System.Drawing.Color.Silver;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(273, 151);
+            this.txtEmail.Location = new System.Drawing.Point(253, 193);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(500, 34);
+            this.txtEmail.Size = new System.Drawing.Size(448, 34);
             this.txtEmail.TabIndex = 8;
             // 
             // txtName
             // 
             this.txtName.BackColor = System.Drawing.Color.Silver;
             this.txtName.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(273, 98);
+            this.txtName.Location = new System.Drawing.Point(253, 114);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(500, 34);
+            this.txtName.Size = new System.Drawing.Size(448, 34);
             this.txtName.TabIndex = 7;
             // 
             // btnUpdate
@@ -256,9 +274,10 @@
             this.btnUpdate.BackColor = System.Drawing.Color.SeaGreen;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.btnUpdate.Location = new System.Drawing.Point(466, 319);
+            this.btnUpdate.Location = new System.Drawing.Point(352, 430);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(150, 50);
+            this.btnUpdate.Size = new System.Drawing.Size(225, 47);
             this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -269,7 +288,8 @@
             this.lblCurrentPassword.AutoSize = true;
             this.lblCurrentPassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurrentPassword.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.lblCurrentPassword.Location = new System.Drawing.Point(49, 267);
+            this.lblCurrentPassword.Location = new System.Drawing.Point(21, 349);
+            this.lblCurrentPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCurrentPassword.Name = "lblCurrentPassword";
             this.lblCurrentPassword.Size = new System.Drawing.Size(218, 28);
             this.lblCurrentPassword.TabIndex = 5;
@@ -280,7 +300,8 @@
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.lblPassword.Location = new System.Drawing.Point(82, 209);
+            this.lblPassword.Location = new System.Drawing.Point(21, 271);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(185, 28);
             this.lblPassword.TabIndex = 4;
@@ -291,7 +312,8 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.lblEmail.Location = new System.Drawing.Point(126, 154);
+            this.lblEmail.Location = new System.Drawing.Point(21, 193);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(141, 28);
             this.lblEmail.TabIndex = 3;
@@ -299,15 +321,16 @@
             // 
             // Settings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1384, 681);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.backbtn);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.labelTop);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Settings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";

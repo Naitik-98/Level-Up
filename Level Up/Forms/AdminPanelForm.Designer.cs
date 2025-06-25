@@ -51,8 +51,9 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft YaHei UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.CadetBlue;
-            this.lblTitle.Location = new System.Drawing.Point(497, 9);
+            this.lblTitle.ForeColor = System.Drawing.Color.Cyan;
+            this.lblTitle.Location = new System.Drawing.Point(441, 23);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(334, 64);
             this.lblTitle.TabIndex = 0;
@@ -63,7 +64,8 @@
             this.lblGameName.AutoSize = true;
             this.lblGameName.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGameName.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblGameName.Location = new System.Drawing.Point(43, 140);
+            this.lblGameName.Location = new System.Drawing.Point(33, 134);
+            this.lblGameName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGameName.Name = "lblGameName";
             this.lblGameName.Size = new System.Drawing.Size(160, 28);
             this.lblGameName.TabIndex = 1;
@@ -74,7 +76,8 @@
             this.lblDescription.AutoSize = true;
             this.lblDescription.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescription.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblDescription.Location = new System.Drawing.Point(51, 203);
+            this.lblDescription.Location = new System.Drawing.Point(33, 245);
+            this.lblDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(152, 28);
             this.lblDescription.TabIndex = 2;
@@ -85,7 +88,8 @@
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblPrice.Location = new System.Drawing.Point(121, 385);
+            this.lblPrice.Location = new System.Drawing.Point(33, 359);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(82, 28);
             this.lblPrice.TabIndex = 3;
@@ -96,7 +100,8 @@
             this.lblGameImage.AutoSize = true;
             this.lblGameImage.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGameImage.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblGameImage.Location = new System.Drawing.Point(49, 460);
+            this.lblGameImage.Location = new System.Drawing.Point(33, 442);
+            this.lblGameImage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGameImage.Name = "lblGameImage";
             this.lblGameImage.Size = new System.Drawing.Size(163, 28);
             this.lblGameImage.TabIndex = 4;
@@ -107,9 +112,10 @@
             this.txtGameName.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtGameName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGameName.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.txtGameName.Location = new System.Drawing.Point(240, 148);
+            this.txtGameName.Location = new System.Drawing.Point(221, 133);
+            this.txtGameName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtGameName.Name = "txtGameName";
-            this.txtGameName.Size = new System.Drawing.Size(500, 31);
+            this.txtGameName.Size = new System.Drawing.Size(495, 31);
             this.txtGameName.TabIndex = 5;
             // 
             // txtGameDescription
@@ -117,10 +123,11 @@
             this.txtGameDescription.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtGameDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGameDescription.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.txtGameDescription.Location = new System.Drawing.Point(240, 211);
+            this.txtGameDescription.Location = new System.Drawing.Point(221, 190);
+            this.txtGameDescription.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtGameDescription.Multiline = true;
             this.txtGameDescription.Name = "txtGameDescription";
-            this.txtGameDescription.Size = new System.Drawing.Size(500, 140);
+            this.txtGameDescription.Size = new System.Drawing.Size(495, 140);
             this.txtGameDescription.TabIndex = 6;
             // 
             // txtGamePrice
@@ -128,16 +135,18 @@
             this.txtGamePrice.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtGamePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGamePrice.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.txtGamePrice.Location = new System.Drawing.Point(240, 393);
+            this.txtGamePrice.Location = new System.Drawing.Point(221, 358);
+            this.txtGamePrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtGamePrice.Name = "txtGamePrice";
-            this.txtGamePrice.Size = new System.Drawing.Size(500, 31);
+            this.txtGamePrice.Size = new System.Drawing.Size(495, 31);
             this.txtGamePrice.TabIndex = 7;
             // 
             // pictureBoxGame
             // 
-            this.pictureBoxGame.Location = new System.Drawing.Point(401, 458);
+            this.pictureBoxGame.Location = new System.Drawing.Point(480, 410);
+            this.pictureBoxGame.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBoxGame.Name = "pictureBoxGame";
-            this.pictureBoxGame.Size = new System.Drawing.Size(150, 150);
+            this.pictureBoxGame.Size = new System.Drawing.Size(225, 131);
             this.pictureBoxGame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxGame.TabIndex = 8;
             this.pictureBoxGame.TabStop = false;
@@ -146,9 +155,10 @@
             // 
             this.btnBrowseImage.BackColor = System.Drawing.Color.PaleTurquoise;
             this.btnBrowseImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBrowseImage.Location = new System.Drawing.Point(240, 460);
+            this.btnBrowseImage.Location = new System.Drawing.Point(221, 426);
+            this.btnBrowseImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBrowseImage.Name = "btnBrowseImage";
-            this.btnBrowseImage.Size = new System.Drawing.Size(100, 40);
+            this.btnBrowseImage.Size = new System.Drawing.Size(150, 62);
             this.btnBrowseImage.TabIndex = 9;
             this.btnBrowseImage.Text = "Browse";
             this.btnBrowseImage.UseVisualStyleBackColor = false;
@@ -159,12 +169,14 @@
             this.btnAddGame.BackColor = System.Drawing.Color.Teal;
             this.btnAddGame.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddGame.ForeColor = System.Drawing.Color.MediumSpringGreen;
-            this.btnAddGame.Location = new System.Drawing.Point(581, 538);
+            this.btnAddGame.Location = new System.Drawing.Point(542, 583);
+            this.btnAddGame.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAddGame.Name = "btnAddGame";
-            this.btnAddGame.Size = new System.Drawing.Size(250, 70);
+            this.btnAddGame.Size = new System.Drawing.Size(201, 66);
             this.btnAddGame.TabIndex = 10;
             this.btnAddGame.Text = "Add Game";
             this.btnAddGame.UseVisualStyleBackColor = false;
+            this.btnAddGame.Click += new System.EventHandler(this.btnAddGame_Click_1);
             // 
             // openFileDialog1
             // 
@@ -173,9 +185,10 @@
             // btnLogout
             // 
             this.btnLogout.Image = global::Level_Up.Properties.Resources.Screenshot_2025_06_11_221343;
-            this.btnLogout.Location = new System.Drawing.Point(56, 584);
+            this.btnLogout.Location = new System.Drawing.Point(10, 559);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(70, 70);
+            this.btnLogout.Size = new System.Drawing.Size(105, 108);
             this.btnLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnLogout.TabIndex = 11;
             this.btnLogout.TabStop = false;
@@ -188,18 +201,20 @@
             this.lstGames.ForeColor = System.Drawing.Color.Black;
             this.lstGames.FormattingEnabled = true;
             this.lstGames.ItemHeight = 20;
-            this.lstGames.Location = new System.Drawing.Point(1009, 140);
+            this.lstGames.Location = new System.Drawing.Point(882, 93);
+            this.lstGames.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lstGames.Name = "lstGames";
-            this.lstGames.Size = new System.Drawing.Size(300, 284);
+            this.lstGames.Size = new System.Drawing.Size(305, 364);
             this.lstGames.TabIndex = 12;
             // 
             // btnRemoveGame
             // 
-            this.btnRemoveGame.BackColor = System.Drawing.Color.Salmon;
+            this.btnRemoveGame.BackColor = System.Drawing.Color.Maroon;
             this.btnRemoveGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveGame.Location = new System.Drawing.Point(1112, 458);
+            this.btnRemoveGame.Location = new System.Drawing.Point(882, 479);
+            this.btnRemoveGame.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRemoveGame.Name = "btnRemoveGame";
-            this.btnRemoveGame.Size = new System.Drawing.Size(100, 40);
+            this.btnRemoveGame.Size = new System.Drawing.Size(150, 62);
             this.btnRemoveGame.TabIndex = 13;
             this.btnRemoveGame.Text = "Remove";
             this.btnRemoveGame.UseVisualStyleBackColor = false;
@@ -207,10 +222,10 @@
             // 
             // AdminPanelForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1384, 681);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.btnRemoveGame);
             this.Controls.Add(this.lstGames);
             this.Controls.Add(this.btnLogout);
@@ -225,6 +240,7 @@
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.lblGameName);
             this.Controls.Add(this.lblTitle);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AdminPanelForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminPanelForm";

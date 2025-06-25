@@ -171,5 +171,10 @@ namespace Level_Up.Forms
                 }
             }
         }
+
+        private void btnAddGame_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

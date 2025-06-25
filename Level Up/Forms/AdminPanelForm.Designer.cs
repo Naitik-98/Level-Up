@@ -226,6 +226,7 @@
             this.Controls.Add(this.lblGameName);
             this.Controls.Add(this.lblTitle);
             this.Name = "AdminPanelForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminPanelForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGame)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).EndInit();

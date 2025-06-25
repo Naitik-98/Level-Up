@@ -265,6 +265,7 @@ namespace Level_Up
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "RegisterForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

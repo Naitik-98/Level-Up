@@ -170,6 +170,7 @@
             this.Controls.Add(this.labelTop);
             this.Controls.Add(this.label1);
             this.Name = "Store";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Store";
             this.panelLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

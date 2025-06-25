@@ -21,6 +21,7 @@ namespace Level_Up.Forms
             InitializeComponent();
             this.username = username;
             connection = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog=LevelUpDB;Integrated Security=True");
+            panelMain.AutoScroll = true;
             LoadUserLibrary();
         }
 

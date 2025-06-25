@@ -20,10 +20,8 @@ namespace Level_Up.Forms
         public AdminPanelForm()
         {
             InitializeComponent();
-
-            //  Link button click events to their respective handlers
             btnAddGame.Click += btnAddGame_Click;
-            btnBrowseImage.Click += btnBrowseImage_Click;
+            LoadGames(); // <-- Add this line
         }
 
         //  Browse Image Button
@@ -103,5 +101,75 @@ namespace Level_Up.Forms
             pictureBoxGame.Tag = null;
         }
 
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var loginForm = new LoginForm();
+            loginForm.FormClosed += (s, args) => this.Close();
+            loginForm.Show();
+        }
+
+        private void LoadGames()
+        {
+            lstGames.Items.Clear();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT GameName FROM Games";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        lstGames.Items.Add(reader["GameName"].ToString());
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error loading games: " + ex.Message);
+                }
+            }
+        }
+
+        private void btnRemoveGame_Click(object sender, EventArgs e)
+        {
+            if (lstGames.SelectedItem == null)
+            {
+                MessageBox.Show("Please select a game to remove.");
+                return;
+            }
+
+            string gameName = lstGames.SelectedItem.ToString();
+            var confirm = MessageBox.Show($"Are you sure you want to remove '{gameName}'?", "Confirm", MessageBoxButtons.YesNo);
+            if (confirm == DialogResult.Yes)
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    try
+                    {
+                        conn.Open();
+                        string query = "DELETE FROM Games WHERE GameName = @GameName";
+                        SqlCommand cmd = new SqlCommand(query, conn);
+                        cmd.Parameters.AddWithValue("@GameName", gameName);
+                        int rows = cmd.ExecuteNonQuery();
+                        if (rows > 0)
+                        {
+                            MessageBox.Show("Game removed.");
+                            LoadGames();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No game removed. Check if the game exists.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message);
+                    }
+                }
+            }
+        }
     }
 }

@@ -40,7 +40,11 @@
             this.btnBrowseImage = new System.Windows.Forms.Button();
             this.btnAddGame = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.btnLogout = new System.Windows.Forms.PictureBox();
+            this.lstGames = new System.Windows.Forms.ListBox();
+            this.btnRemoveGame = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGame)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -118,7 +122,6 @@
             this.txtGameDescription.Name = "txtGameDescription";
             this.txtGameDescription.Size = new System.Drawing.Size(500, 140);
             this.txtGameDescription.TabIndex = 6;
-            
             // 
             // txtGamePrice
             // 
@@ -132,9 +135,9 @@
             // 
             // pictureBoxGame
             // 
-            this.pictureBoxGame.Location = new System.Drawing.Point(979, 148);
+            this.pictureBoxGame.Location = new System.Drawing.Point(401, 458);
             this.pictureBoxGame.Name = "pictureBoxGame";
-            this.pictureBoxGame.Size = new System.Drawing.Size(300, 300);
+            this.pictureBoxGame.Size = new System.Drawing.Size(150, 150);
             this.pictureBoxGame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxGame.TabIndex = 8;
             this.pictureBoxGame.TabStop = false;
@@ -167,12 +170,50 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Image = global::Level_Up.Properties.Resources.Screenshot_2025_06_11_221343;
+            this.btnLogout.Location = new System.Drawing.Point(56, 584);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(70, 70);
+            this.btnLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnLogout.TabIndex = 11;
+            this.btnLogout.TabStop = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // lstGames
+            // 
+            this.lstGames.BackColor = System.Drawing.Color.LightCyan;
+            this.lstGames.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstGames.ForeColor = System.Drawing.Color.Black;
+            this.lstGames.FormattingEnabled = true;
+            this.lstGames.ItemHeight = 20;
+            this.lstGames.Location = new System.Drawing.Point(1009, 140);
+            this.lstGames.Name = "lstGames";
+            this.lstGames.Size = new System.Drawing.Size(300, 284);
+            this.lstGames.TabIndex = 12;
+            // 
+            // btnRemoveGame
+            // 
+            this.btnRemoveGame.BackColor = System.Drawing.Color.Salmon;
+            this.btnRemoveGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveGame.Location = new System.Drawing.Point(1112, 458);
+            this.btnRemoveGame.Name = "btnRemoveGame";
+            this.btnRemoveGame.Size = new System.Drawing.Size(100, 40);
+            this.btnRemoveGame.TabIndex = 13;
+            this.btnRemoveGame.Text = "Remove";
+            this.btnRemoveGame.UseVisualStyleBackColor = false;
+            this.btnRemoveGame.Click += new System.EventHandler(this.btnRemoveGame_Click);
+            // 
             // AdminPanelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1384, 681);
+            this.Controls.Add(this.btnRemoveGame);
+            this.Controls.Add(this.lstGames);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnAddGame);
             this.Controls.Add(this.btnBrowseImage);
             this.Controls.Add(this.pictureBoxGame);
@@ -187,6 +228,7 @@
             this.Name = "AdminPanelForm";
             this.Text = "AdminPanelForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGame)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,5 +248,8 @@
         private System.Windows.Forms.Button btnBrowseImage;
         private System.Windows.Forms.Button btnAddGame;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.PictureBox btnLogout;
+        private System.Windows.Forms.ListBox lstGames;
+        private System.Windows.Forms.Button btnRemoveGame;
     }
 }

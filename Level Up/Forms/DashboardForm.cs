@@ -51,6 +51,9 @@ namespace Level_Up
 
 =======
      
+<<<<<<< HEAD
+>>>>>>> parent of 1809319 (solve)
+=======
 >>>>>>> parent of 1809319 (solve)
         private void DashboardForm_Load(object sender, EventArgs e)
         {

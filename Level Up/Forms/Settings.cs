@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Level_Up.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,294 @@ namespace Level_Up.Forms
         private void Logoutbtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        public Settings(string username)
+        {
+            InitializeComponent();
+            this.username = username;
+            Logoutbtn.Click += Logoutbtn_Click;
+        }
+        public Settings(string username)
+        {
+            InitializeComponent();
+            this.username = username;
+            Logoutbtn.Click += Logoutbtn_Click;
+             private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        }
+        private void backbtn_Click(object sender, EventArgs e)
+        {
+            var dashboard = new DashboardForm();
+            dashboard.Show();
+            this.Close();
+        }
+        private void backbtn_Click(object sender, EventArgs e)
+        {
+            var dashboard = new DashboardForm();
+            dashboard.Show();
+            this.Close();
+        }
+        private void backbtn_Click(object sender, EventArgs e)
+        {
+            var dashboard = new DashboardForm();
+            dashboard.Show();
+            this.Close();
+        }
+        public Settings(string username)
+        {
+            InitializeComponent();
+            this.username = username;
+            Logoutbtn.Click += Logoutbtn_Click;
         }
 
         private void backbtn_Click(object sender, EventArgs e)
@@ -53,8 +342,74 @@ namespace Level_Up.Forms
                 MessageBox.Show("Username is not set.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
+            if (string.IsNullOrWhiteSpace(newName) || string.IsNullOrWhiteSpace(newEmail) ||
+                string.IsNullOrWhiteSpace(currentPassword))
+            {
+                MessageBox.Show("Name, Email, and Current Password are required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(newName) || string.IsNullOrWhiteSpace(newEmail) ||
+                string.IsNullOrWhiteSpace(currentPassword))
+            {
+                MessageBox.Show("Name, Email, and Current Password are required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(newName) || string.IsNullOrWhiteSpace(newEmail) ||
+                string.IsNullOrWhiteSpace(currentPassword))
+            {
+                MessageBox.Show("Name, Email, and Current Password are required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(newName) || string.IsNullOrWhiteSpace(newEmail) ||
+                string.IsNullOrWhiteSpace(currentPassword))
+            {
+                MessageBox.Show("Name, Email, and Current Password are required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             using (var db = new DbAccess())
+
+
+                private void btnLibrary_Click(object sender, EventArgs e)
+                {
+                    var libraryForm = new Library(username);
+                    libraryForm.FormClosed += (s, args) => this.Show();
+                    libraryForm.Show();
+                    this.Hide();
+                } private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
             {
                 string sql = $"SELECT Password FROM Users WHERE Username = '{username.Replace("'", "''")}'";
                 var dt = db.ExecuteQueryTable(sql);
@@ -68,6 +423,48 @@ namespace Level_Up.Forms
                 if (dbPassword != currentPassword)
                 {
                     MessageBox.Show("Current password is incorrect.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                string sql = $"SELECT Password FROM Users WHERE Username = '{username.Replace("'", "''")}'";
+                var dt = db.ExecuteQueryTable(sql);
+                if (dt == null || dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("User not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                string sql = $"SELECT Password FROM Users WHERE Username = '{username.Replace("'", "''")}'";
+                var dt = db.ExecuteQueryTable(sql);
+                if (dt == null || dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("User not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                string sql = $"SELECT Password FROM Users WHERE Username = '{username.Replace("'", "''")}'";
+                var dt = db.ExecuteQueryTable(sql);
+                if (dt == null || dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("User not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                string updateSql = $"UPDATE Users SET FullName = @FullName, Email = @Email";
+                if (!string.IsNullOrWhiteSpace(newPassword))
+                    updateSql += ", Password = @Password";
+                updateSql += " WHERE Username = @Username"; string updateSql = $"UPDATE Users SET FullName = @FullName, Email = @Email";
+                if (!string.IsNullOrWhiteSpace(newPassword))
+                    updateSql += ", Password = @Password";
+                updateSql += " WHERE Username = @Username"; string updateSql = $"UPDATE Users SET FullName = @FullName, Email = @Email";
+                if (!string.IsNullOrWhiteSpace(newPassword))
+                    updateSql += ", Password = @Password";
+                updateSql += " WHERE Username = @Username"; string updateSql = $"UPDATE Users SET FullName = @FullName, Email = @Email";
+                if (!string.IsNullOrWhiteSpace(newPassword))
+                    updateSql += ", Password = @Password";
+                updateSql += " WHERE Username = @Username";
+
+                string sql = $"SELECT Password FROM Users WHERE Username = '{username.Replace("'", "''")}'";
+                var dt = db.ExecuteQueryTable(sql);
+                if (dt == null || dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("User not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -105,12 +502,61 @@ namespace Level_Up.Forms
             accountForm.Show();
             this.Hide();
         }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
 
         private void btnStore_Click(object sender, EventArgs e)
         {
             var storeForm = new Store(username);
             storeForm.FormClosed += (s, args) => this.Show();
             storeForm.Show();
+            this.Hide();
+        }
+        private void btnAccount_Click(object sender, EventArgs e)
+        {
+            var accountForm = new Account(null, null, null, username);
+            accountForm.FormClosed += (s, args) => this.Show();
+            accountForm.Show();
+            this.Hide();
+        }
+        private void btnAccount_Click(object sender, EventArgs e)
+        {
+            var accountForm = new Account(null, null, null, username);
+            accountForm.FormClosed += (s, args) => this.Show();
+            accountForm.Show();
+            this.Hide();
+        }
+        private void btnAccount_Click(object sender, EventArgs e)
+        {
+            var accountForm = new Account(null, null, null, username);
+            accountForm.FormClosed += (s, args) => this.Show();
+            accountForm.Show();
+            this.Hide();
+        }
+        private void btnAccount_Click(object sender, EventArgs e)
+        {
+            var accountForm = new Account(null, null, null, username);
+            accountForm.FormClosed += (s, args) => this.Show();
+            accountForm.Show();
             this.Hide();
         }
 
@@ -121,6 +567,83 @@ namespace Level_Up.Forms
             settingsForm.Show();
             this.Hide();
         }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+private void btnLibrary_Click(object sender, EventArgs e)
+{
+    var libraryForm = new Library(username);
+    libraryForm.FormClosed += (s, args) => this.Show();
+    libraryForm.Show();
+    this.Hide();
+}
+private void btnLibrary_Click(object sender, EventArgs e)
+{
+    var libraryForm = new Library(username);
+    libraryForm.FormClosed += (s, args) => this.Show();
+    libraryForm.Show();
+    this.Hide();
+}
+private void btnLibrary_Click(object sender, EventArgs e)
+{
+    var libraryForm = new Library(username);
+    libraryForm.FormClosed += (s, args) => this.Show();
+    libraryForm.Show();
+    this.Hide();
+}
+private void btnLibrary_Click(object sender, EventArgs e)
+{
+    var libraryForm = new Library(username);
+    libraryForm.FormClosed += (s, args) => this.Show();
+    libraryForm.Show();
+    this.Hide();
+}
+private void btnLibrary_Click(object sender, EventArgs e)
+{
+    var libraryForm = new Library(username);
+    libraryForm.FormClosed += (s, args) => this.Show();
+    libraryForm.Show();
+    this.Hide();
+}
+private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            var libraryForm = new Library(username);
+            libraryForm.FormClosed += (s, args) => this.Show();
+            libraryForm.Show();
+            this.Hide();
+        }
 
         private void btnLibrary_Click(object sender, EventArgs e)
         {
@@ -128,6 +651,56 @@ namespace Level_Up.Forms
             libraryForm.FormClosed += (s, args) => this.Show();
             libraryForm.Show();
             this.Hide();
+
+     private void btnLibrary_Click(object sender, EventArgs e)
+{
+    var libraryForm = new Library(username);
+    libraryForm.FormClosed += (s, args) => this.Show();
+    libraryForm.Show();
+    this.Hide();
+}
+private void btnLibrary_Click(object sender, EventArgs e)
+{
+    var libraryForm = new Library(username);
+    libraryForm.FormClosed += (s, args) => this.Show();
+    libraryForm.Show();
+    this.Hide();
+}
+private void btnLibrary_Click(object sender, EventArgs e)
+{
+    var libraryForm = new Library(username);
+    libraryForm.FormClosed += (s, args) => this.Show();
+    libraryForm.Show();
+    this.Hide();
+}
+private void btnLibrary_Click(object sender, EventArgs e)
+{
+    var libraryForm = new Library(username);
+    libraryForm.FormClosed += (s, args) => this.Show();
+    libraryForm.Show();
+    this.Hide();
+}
+private void btnLibrary_Click(object sender, EventArgs e)
+{
+    var libraryForm = new Library(username);
+    libraryForm.FormClosed += (s, args) => this.Show();
+    libraryForm.Show();
+    this.Hide();
+}
+private void btnLibrary_Click(object sender, EventArgs e)
+{
+    var libraryForm = new Library(username);
+    libraryForm.FormClosed += (s, args) => this.Show();
+    libraryForm.Show();
+    this.Hide();
+}
+private void btnLibrary_Click(object sender, EventArgs e)
+{
+    var libraryForm = new Library(username);
+    libraryForm.FormClosed += (s, args) => this.Show();
+    libraryForm.Show();
+    this.Hide();
+}
         }
     }
 }

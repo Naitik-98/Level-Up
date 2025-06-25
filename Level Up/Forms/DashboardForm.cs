@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Level_Up
 {
@@ -27,7 +28,218 @@ namespace Level_Up
             this.LoginForm = loginForm;
             this.Username = username;
         }
+        this.LoginForm = loginForm;
+            this.Username = username;this.LoginForm = loginForm;
+            this.Username = username;this.LoginForm = loginForm;
+            this.Username = username;this.LoginForm = loginForm;
+         
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTop_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTop_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTop_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTop_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTop_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTop_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTop_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTop_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTop_Click(object sender, EventArgs e)
+        {
+
+        }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -57,6 +269,21 @@ namespace Level_Up
             var accountForm = new Account(LoginForm, this, DbAccess, Username);
             accountForm.Show();
             accountForm.FormClosed += (s, args) => this.Show();
+            this.Hide(); var accountForm = new Account(LoginForm, this, DbAccess, Username);
+            accountForm.Show();
+            accountForm.FormClosed += (s, args) => this.Show();
+            this.Hide(); var accountForm = new Account(LoginForm, this, DbAccess, Username);
+            accountForm.Show();
+            accountForm.FormClosed += (s, args) => this.Show();
+            this.Hide(); var accountForm = new Account(LoginForm, this, DbAccess, Username);
+            accountForm.Show();
+            accountForm.FormClosed += (s, args) => this.Show();
+            this.Hide(); var accountForm = new Account(LoginForm, this, DbAccess, Username);
+            accountForm.Show();
+            accountForm.FormClosed += (s, args) => this.Show();
+            this.Hide(); var accountForm = new Account(LoginForm, this, DbAccess, Username);
+            accountForm.Show();
+            accountForm.FormClosed += (s, args) => this.Show();
             this.Hide();
         }
 
@@ -73,8 +300,127 @@ namespace Level_Up
             var storeForm = new Store(Username); // Pass the username property from DashboardForm
             storeForm.FormClosed += (s, args) => this.Show();
             storeForm.Show();
+            this.Hide(); var storeForm = new Store(Username); // Pass the username property from DashboardForm
+            storeForm.FormClosed += (s, args) => this.Show();
+            storeForm.Show();
             this.Hide();
         }
+        var storeForm = new Store(Username); // Pass the username property from DashboardForm
+        storeForm.FormClosed += (s, args) => this.Show();
+        storeForm.Show();
+            this.Hide();
+    }  var storeForm = new Store(Username); // Pass the username property from DashboardForm
+            storeForm.FormClosed += (s, args) => this.Show();
+    storeForm.Show();
+            this.Hide();
+    }
+    var storeForm = new Store(Username); // Pass the username property from DashboardForm
+    storeForm.FormClosed += (s, args) => this.Show();
+    storeForm.Show();
+            this.Hide();
+    }
+    var storeForm = new Store(Username); // Pass the username property from DashboardForm
+    storeForm.FormClosed += (s, args) => this.Show();
+    storeForm.Show();
+            this.Hide(); var storeForm = new Store(Username); // Pass the username property from DashboardForm
+    storeForm.FormClosed += (s, args) => this.Show();
+    storeForm.Show();
+            this.Hide(); var storeForm = new Store(Username); // Pass the username property from DashboardForm
+    storeForm.FormClosed += (s, args) => this.Show();
+    storeForm.Show();
+            this.Hide(); var storeForm = new Store(Username); // Pass the username property from DashboardForm
+    storeForm.FormClosed += (s, args) => this.Show();
+    storeForm.Show();
+            this.Hide(); var storeForm = new Store(Username); // Pass the username property from DashboardForm
+    storeForm.FormClosed += (s, args) => this.Show();
+    storeForm.Show();
+            this.Hide();
+    }
+    private void btnLibrary_Click(object sender, EventArgs e)
+    {
+        var libraryForm = new Library(username);
+        libraryForm.FormClosed += (s, args) => this.Show();
+        libraryForm.Show();
+        this.Hide();
+    }
+    private void btnLibrary_Click(object sender, EventArgs e)
+    {
+        var libraryForm = new Library(username);
+        libraryForm.FormClosed += (s, args) => this.Show();
+        libraryForm.Show();
+        this.Hide();
+    }
+    private void btnLibrary_Click(object sender, EventArgs e)
+    {
+        var libraryForm = new Library(username);
+        libraryForm.FormClosed += (s, args) => this.Show();
+        libraryForm.Show();
+        this.Hide();
+    }
+    private void btnLibrary_Click(object sender, EventArgs e)
+    {
+        var libraryForm = new Library(username);
+        libraryForm.FormClosed += (s, args) => this.Show();
+        libraryForm.Show();
+        this.Hide();
+    }
+    private void btnLibrary_Click(object sender, EventArgs e)
+    {
+        var libraryForm = new Library(username);
+        libraryForm.FormClosed += (s, args) => this.Show();
+        libraryForm.Show();
+        this.Hide();
+    }
+    private void btnLibrary_Click(object sender, EventArgs e)
+    {
+        var libraryForm = new Library(username);
+        libraryForm.FormClosed += (s, args) => this.Show();
+        libraryForm.Show();
+        this.Hide();
+    }
+    private void btnLibrary_Click(object sender, EventArgs e)
+    {
+        var libraryForm = new Library(username);
+        libraryForm.FormClosed += (s, args) => this.Show();
+        libraryForm.Show();
+        this.Hide();
+    }
+    private void btnLibrary_Click(object sender, EventArgs e)
+    {
+        var libraryForm = new Library(username);
+        libraryForm.FormClosed += (s, args) => this.Show();
+        libraryForm.Show();
+        this.Hide();
+    }
+    private void btnLibrary_Click(object sender, EventArgs e)
+    {
+        var libraryForm = new Library(username);
+        libraryForm.FormClosed += (s, args) => this.Show();
+        libraryForm.Show();
+        this.Hide();
+    }
+    private void btnLibrary_Click(object sender, EventArgs e)
+    {
+        var libraryForm = new Library(username);
+        libraryForm.FormClosed += (s, args) => this.Show();
+        libraryForm.Show();
+        this.Hide();
+    }
+    private void btnLibrary_Click(object sender, EventArgs e)
+    {
+        var libraryForm = new Library(username);
+        libraryForm.FormClosed += (s, args) => this.Show();
+        libraryForm.Show();
+        this.Hide();
+    }
+    private void btnLibrary_Click(object sender, EventArgs e)
+    {
+        var libraryForm = new Library(username);
+        libraryForm.FormClosed += (s, args) => this.Show();
+        libraryForm.Show();
+        this.Hide();
+    }
+}
 
         private void btnLibrary_Click(object sender, EventArgs e)
         {
@@ -96,7 +442,76 @@ namespace Level_Up
 
         private void Welcome_Click(object sender, EventArgs e)
         {
+    private void label1_Click(object sender, EventArgs e)
+{
 
+}
+
+private void textBox1_TextChanged(object sender, EventArgs e)
+{
+
+}
+
+private void Welcome_Click(object sender, EventArgs e)
+{
+
+}
+private void label1_Click(object sender, EventArgs e)
+{
+
+}
+
+private void textBox1_TextChanged(object sender, EventArgs e)
+{
+
+}
+
+private void Welcome_Click(object sender, EventArgs e)
+{
+
+}
+private void label1_Click(object sender, EventArgs e)
+{
+
+}
+
+private void textBox1_TextChanged(object sender, EventArgs e)
+{
+
+}
+
+private void Welcome_Click(object sender, EventArgs e)
+{
+
+}
+private void label1_Click(object sender, EventArgs e)
+{
+
+}
+
+private void textBox1_TextChanged(object sender, EventArgs e)
+{
+
+}
+
+private void Welcome_Click(object sender, EventArgs e)
+{
+
+}
+private void label1_Click(object sender, EventArgs e)
+{
+
+}
+
+private void textBox1_TextChanged(object sender, EventArgs e)
+{
+
+}
+
+private void Welcome_Click(object sender, EventArgs e)
+{
+
+}
         }
     }
 }

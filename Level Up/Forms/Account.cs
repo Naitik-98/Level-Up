@@ -105,16 +105,6 @@ namespace Level_Up.Forms
             libraryForm.Show();
             this.Hide();
         }
-
-        private void lblName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblUsername_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 
      

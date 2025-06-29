@@ -49,6 +49,8 @@
             this.lblCurrentPassword = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backbtn)).BeginInit();
@@ -177,7 +179,7 @@
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.lblName.Location = new System.Drawing.Point(120, 104);
+            this.lblName.Location = new System.Drawing.Point(120, 87);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(147, 28);
             this.lblName.TabIndex = 1;
@@ -197,6 +199,8 @@
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.SystemColors.MenuText;
+            this.panelMain.Controls.Add(this.lblUserName);
+            this.panelMain.Controls.Add(this.txtUsername);
             this.panelMain.Controls.Add(this.txtCurrentPassword);
             this.panelMain.Controls.Add(this.txtNewPassword);
             this.panelMain.Controls.Add(this.txtEmail);
@@ -217,7 +221,7 @@
             // 
             this.txtCurrentPassword.BackColor = System.Drawing.Color.Silver;
             this.txtCurrentPassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCurrentPassword.Location = new System.Drawing.Point(273, 261);
+            this.txtCurrentPassword.Location = new System.Drawing.Point(273, 287);
             this.txtCurrentPassword.Name = "txtCurrentPassword";
             this.txtCurrentPassword.Size = new System.Drawing.Size(500, 34);
             this.txtCurrentPassword.TabIndex = 10;
@@ -227,7 +231,7 @@
             // 
             this.txtNewPassword.BackColor = System.Drawing.Color.Silver;
             this.txtNewPassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewPassword.Location = new System.Drawing.Point(273, 203);
+            this.txtNewPassword.Location = new System.Drawing.Point(273, 237);
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.Size = new System.Drawing.Size(500, 34);
             this.txtNewPassword.TabIndex = 9;
@@ -237,7 +241,7 @@
             // 
             this.txtEmail.BackColor = System.Drawing.Color.Silver;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(273, 151);
+            this.txtEmail.Location = new System.Drawing.Point(273, 131);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(500, 34);
             this.txtEmail.TabIndex = 8;
@@ -246,7 +250,7 @@
             // 
             this.txtName.BackColor = System.Drawing.Color.Silver;
             this.txtName.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(273, 98);
+            this.txtName.Location = new System.Drawing.Point(273, 81);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(500, 34);
             this.txtName.TabIndex = 7;
@@ -256,7 +260,7 @@
             this.btnUpdate.BackColor = System.Drawing.Color.SeaGreen;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.btnUpdate.Location = new System.Drawing.Point(466, 319);
+            this.btnUpdate.Location = new System.Drawing.Point(466, 344);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(150, 50);
             this.btnUpdate.TabIndex = 6;
@@ -269,7 +273,7 @@
             this.lblCurrentPassword.AutoSize = true;
             this.lblCurrentPassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurrentPassword.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.lblCurrentPassword.Location = new System.Drawing.Point(49, 267);
+            this.lblCurrentPassword.Location = new System.Drawing.Point(49, 290);
             this.lblCurrentPassword.Name = "lblCurrentPassword";
             this.lblCurrentPassword.Size = new System.Drawing.Size(218, 28);
             this.lblCurrentPassword.TabIndex = 5;
@@ -280,22 +284,45 @@
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.lblPassword.Location = new System.Drawing.Point(82, 209);
+            this.lblPassword.Location = new System.Drawing.Point(82, 243);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(185, 28);
             this.lblPassword.TabIndex = 4;
             this.lblPassword.Text = "New Password : ";
+
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.lblEmail.Location = new System.Drawing.Point(126, 154);
+            this.lblEmail.Location = new System.Drawing.Point(126, 134);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(141, 28);
             this.lblEmail.TabIndex = 3;
             this.lblEmail.Text = "New Email : ";
+
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.BackColor = System.Drawing.Color.Silver;
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(273, 181);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(500, 34);
+            this.txtUsername.TabIndex = 12;
+            this.txtUsername.UseSystemPasswordChar = true;
+            // 
+            // lblUserName
+            // 
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserName.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.lblUserName.Location = new System.Drawing.Point(73, 184);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(190, 28);
+            this.lblUserName.TabIndex = 13;
+            this.lblUserName.Text = "New Username : ";
             // 
             // Settings
             // 
@@ -344,5 +371,7 @@
         private System.Windows.Forms.TextBox txtNewPassword;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.Label lblUserName;
     }
 }

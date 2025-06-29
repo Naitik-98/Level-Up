@@ -129,10 +129,9 @@ namespace Level_Up.Forms
 
         private void btnAccount_Click(object sender, EventArgs e)
         {
-            var accountForm = new Account(null, null, null, username);
-            accountForm.FormClosed += (s, args) => this.Show();
+            var accountForm = new Account(LoginForm, this, DbAccess, Username);
             accountForm.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void btnStore_Click(object sender, EventArgs e)

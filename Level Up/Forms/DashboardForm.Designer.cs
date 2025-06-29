@@ -54,7 +54,7 @@
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(300, 700);
             this.panelLeft.TabIndex = 0;
-            this.panelLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+
             // 
             // btnSettings
             // 
@@ -130,7 +130,7 @@
             this.labelTop.TabIndex = 2;
             this.labelTop.Text = "Level Up";
             this.labelTop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelTop.Click += new System.EventHandler(this.labelTop_Click);
+
             // 
             // panelMain
             // 
@@ -140,7 +140,7 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1066, 570);
             this.panelMain.TabIndex = 3;
-            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
+
             // 
             // Welcome
             // 
@@ -163,7 +163,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+
             // 
             // DashboardForm
             // 
@@ -180,7 +180,6 @@
             this.Name = "DashboardForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Level Up-Dashboard";
-            this.Load += new System.EventHandler(this.DashboardForm_Load);
             this.panelLeft.ResumeLayout(false);
             this.panelMain.ResumeLayout(false);
             this.panelMain.PerformLayout();

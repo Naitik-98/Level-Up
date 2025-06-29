@@ -28,13 +28,36 @@ namespace Level_Up
             this.Username = username;
         }
 
-      
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTop_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void btnAccount_Click(object sender, EventArgs e)
         {
             var accountForm = new Account(LoginForm, this, DbAccess, Username);
             accountForm.Show();
-            this.Close();
+            accountForm.FormClosed += (s, args) => this.Show();
+            this.Hide();
         }
 
         private void btnSettings_Click(object sender, EventArgs e)

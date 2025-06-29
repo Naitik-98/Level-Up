@@ -56,7 +56,8 @@ namespace Level_Up
         {
             var accountForm = new Account(LoginForm, this, DbAccess, Username);
             accountForm.Show();
-            this.Close();
+            accountForm.FormClosed += (s, args) => this.Show();
+            this.Hide();
         }
 
         private void btnSettings_Click(object sender, EventArgs e)

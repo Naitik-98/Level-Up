@@ -123,6 +123,99 @@ namespace Level_Up.Forms
             }
         }
 
+        private void SearchGames(string searchTerm)
+        {
+            panelMain.Controls.Clear();
+
+            try
+            {
+                connection.Open();
+                string query = "SELECT GameName, Price, GameImagePath, GameDescription FROM Games WHERE GameName LIKE @Search";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@Search", "%" + searchTerm + "%");
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                int y = 10;
+                while (reader.Read())
+                {
+                    string gameName = reader["GameName"].ToString();
+                    string price = reader["Price"].ToString();
+                    string imagePath = reader["GameImagePath"].ToString();
+                    string description = reader["GameDescription"].ToString();
+
+                    // Reuse your existing code to create and add the game card panel
+                    Panel gameCard = new Panel();
+                    gameCard.Size = new Size(520, 150);
+                    gameCard.BackColor = Color.FromArgb(30, 30, 30);
+                    gameCard.Location = new Point(10, y);
+
+                    PictureBox pic = new PictureBox();
+                    pic.Size = new Size(120, 120);
+                    pic.Location = new Point(15, 15);
+                    pic.SizeMode = PictureBoxSizeMode.StretchImage;
+                    if (!string.IsNullOrEmpty(imagePath) && System.IO.File.Exists(imagePath))
+                    {
+                        pic.Image = Image.FromFile(imagePath);
+                    }
+                    else
+                    {
+                        pic.Image = null;
+                    }
+
+                    Label lblName = new Label();
+                    lblName.Text = gameName;
+                    lblName.ForeColor = Color.White;
+                    lblName.Font = new Font("Arial", 13, FontStyle.Bold);
+                    lblName.Location = new Point(150, 15);
+                    lblName.MaximumSize = new Size(340, 0);
+                    lblName.AutoSize = true;
+
+                    Label lblDesc = new Label();
+                    lblDesc.Text = description;
+                    lblDesc.ForeColor = Color.LightGray;
+                    lblDesc.Font = new Font("Arial", 9, FontStyle.Regular);
+                    lblDesc.Location = new Point(150, 45);
+                    lblDesc.Size = new Size(340, 40);
+                    lblDesc.AutoEllipsis = true;
+
+                    Label lblPrice = new Label();
+                    lblPrice.Text = "Price: BDT" + price;
+                    lblPrice.ForeColor = Color.White;
+                    lblPrice.Font = new Font("Arial", 10, FontStyle.Regular);
+                    lblPrice.Location = new Point(150, 90);
+                    lblPrice.AutoSize = true;
+
+                    Button btnBuy = new Button();
+                    btnBuy.Text = "Buy";
+                    btnBuy.BackColor = Color.DarkGreen;
+                    btnBuy.ForeColor = Color.White;
+                    btnBuy.Size = new Size(80, 30);
+                    btnBuy.Location = new Point((gameCard.Width - btnBuy.Width) / 2, gameCard.Height - btnBuy.Height - 10);
+                    btnBuy.Click += (s, e) => BuyGame(gameName, price);
+
+                    gameCard.Controls.Add(pic);
+                    gameCard.Controls.Add(lblName);
+                    gameCard.Controls.Add(lblDesc);
+                    gameCard.Controls.Add(lblPrice);
+                    gameCard.Controls.Add(btnBuy);
+
+                    panelMain.Controls.Add(gameCard);
+
+                    y += gameCard.Height + 10;
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error searching games: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
         private void BuyGame(string gameName, string price)
         {
             try
@@ -201,5 +294,9 @@ namespace Level_Up.Forms
             this.Hide();
         }
 
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            SearchGames(txtSearch.Text.Trim());
+        }
     }
 }

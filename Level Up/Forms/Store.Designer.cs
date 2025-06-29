@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnStore = new System.Windows.Forms.Button();
             this.btnLibrary = new System.Windows.Forms.Button();
@@ -37,10 +37,15 @@
             this.panelMain = new System.Windows.Forms.Panel();
             this.labelTop = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.backbtn = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnSearch = new System.Windows.Forms.PictureBox();
             this.panelLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backbtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLeft
@@ -54,16 +59,6 @@
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(300, 700);
             this.panelLeft.TabIndex = 4;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Level_Up.Properties.Resources.Picsart_25_05_21_17_53_38_533;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 284);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // btnSettings
             // 
@@ -121,9 +116,9 @@
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.SystemColors.MenuText;
-            this.panelMain.Location = new System.Drawing.Point(303, 108);
+            this.panelMain.Location = new System.Drawing.Point(303, 161);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1066, 570);
+            this.panelMain.Size = new System.Drawing.Size(1066, 517);
             this.panelMain.TabIndex = 7;
             // 
             // labelTop
@@ -133,7 +128,7 @@
             this.labelTop.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelTop.Location = new System.Drawing.Point(382, 9);
             this.labelTop.Name = "labelTop";
-            this.labelTop.Size = new System.Drawing.Size(1090, 81);
+            this.labelTop.Size = new System.Drawing.Size(987, 81);
             this.labelTop.TabIndex = 6;
             this.labelTop.Text = "Store";
             this.labelTop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -147,6 +142,21 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "label1";
             // 
+            // txtSearch
+            // 
+            this.txtSearch.BackColor = System.Drawing.Color.DimGray;
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtSearch.Location = new System.Drawing.Point(306, 105);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(800, 35);
+            this.txtSearch.TabIndex = 8;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // backbtn
             // 
             this.backbtn.Image = global::Level_Up.Properties.Resources.Screenshot_2025_06_11_221343;
@@ -158,12 +168,35 @@
             this.backbtn.TabStop = false;
             this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Level_Up.Properties.Resources.Picsart_25_05_21_17_53_38_533;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(300, 284);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Image = global::Level_Up.Properties.Resources.vector_search_icon;
+            this.btnSearch.Location = new System.Drawing.Point(1121, 93);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(50, 50);
+            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnSearch.TabIndex = 10;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // Store
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1384, 681);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.backbtn);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelMain);
@@ -173,8 +206,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Store";
             this.panelLeft.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backbtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +226,8 @@
         private System.Windows.Forms.Label labelTop;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox backbtn;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.PictureBox btnSearch;
     }
 }

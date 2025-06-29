@@ -176,5 +176,8 @@
   <ItemGroup>
     <None Include="Resources\Screenshot 2025-06-11 221343.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vector-search-icon.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
